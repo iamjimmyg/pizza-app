@@ -7,6 +7,7 @@ class Review extends Component {
     return (
       <div>
         Review
+        <Link to='/thankyou'><button>Next</button></Link>
       </div>
     );
   }

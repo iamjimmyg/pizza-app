@@ -3,6 +3,7 @@ import Crust from './Crust'
 import Ingredients from './Ingredients'
 import Review from './Review'
 import ThankYou from './ThankYou'
+import './App.css'
 
 import {
   BrowserRouter as Router,
@@ -14,17 +15,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="container-react">
+        <div className="container">
           <Switch>
             <Route exact path="/" component={Crust}/>
             <Route path="/ingredients" component={Ingredients}/>
             <Route path="/review" component={Review}/>
             <Route path="/thankyou" component={ThankYou}/>
-
-
-
           </Switch>
-
         </div>
       </Router>
     );

@@ -7,6 +7,7 @@ class Ingredients extends Component {
     return (
       <div>
         Ingredients
+        <Link to='/review'><button>Next</button></Link>
       </div>
     );
   }
