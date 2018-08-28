@@ -41,14 +41,17 @@ class Crust extends Component {
     })
     return (
       <div id='crust'>
-        <h1>Please Select Crust</h1>
-        <select onChange={this.handleCrust}>
-          <option value=''>Select Crust</option>
-          {selectOptions}
-        </select>
-        <Link to='/ingredients'>
-          <button onClick={()=>this.props.updateCrust(this.state.crust)} disabled={this.state.crust == null ? true: false}>Next</button>
-        </Link>
+        <div className='content'>
+          <h1>Please Select Crust</h1>
+          <select onChange={this.handleCrust} className="btn select">
+            <option value=''>Select Crust</option>
+            {selectOptions}
+          </select>
+          <Link to='/ingredients'>
+            <button className='btn btn-primary' onClick={()=>this.props.updateCrust(this.state.crust)} disabled={this.state.crust == null ? true: false}>Next</button>
+          </Link>
+        </div>
+
       </div>
     );
   }

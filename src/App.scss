@@ -4,16 +4,62 @@
 
 #crust {
   height: 100vh;
-  background: lightgrey;
+  h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   text-align: center;
+  .select {
+    text-align: center;
+    width: 150px;
+    border: 1px solid lightgrey;
+    height: 37px;
+    margin-right: 20px;
+  }
+
 }
 #ingredients {
   height: 100vh;
-  background: lightgrey;
+  .content {
+    min-height: 600px;
+  }
+  h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   text-align: center;
+  table {
+    td:first-child{
+      text-align: left;
+    }
+    td:nth-child(2){
+      text-align: right;
+    }
+    width: 100%;
+  }
 }
 #review {
   height: 100vh;
-  background: lightgrey;
+  h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  text-align: center;
+  table {
+    td:first-child{
+      text-align: left;
+    }
+    td:nth-child(2){
+      text-align: right;
+    }
+    width: 100%;
+  }
+}
+#thankyou {
+  height: 100vh;
+  h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   text-align: center;
 }

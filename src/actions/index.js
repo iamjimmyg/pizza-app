@@ -6,7 +6,6 @@ export function updateCrust(crust) {
 }
 
 export function updateIngredients(ingredients, crust) {
-  console.log(crust)
   return {
     type: 'UPDATE_INGREDIENTS',
     payload: [ingredients, crust],

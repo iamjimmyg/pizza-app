@@ -9,7 +9,6 @@ import Table from './Table'
 
 class Review extends Component {
 
-
   render() {
     let ingredientsUsed = []
     for(var k in this.props.demoData.ingredients){
@@ -18,18 +17,20 @@ class Review extends Component {
       obj.picked =  this.props.demoData.ingredients[k]
       ingredientsUsed.push(obj)
     }
-    //console.log(ingredientsUsed)
-    //console.log(this.props.demoData.ingredients)
+
     return (
       <div id='review'>
-        <h1>Review</h1>
-        <div>
-          <Table
-            crust={this.props.demoData.crust}
-            ingredientsUsed={ingredientsUsed}
-          />
+        <div className='content'>
+          <h1>Review</h1>
+          <div>
+            <Table
+              crust={this.props.demoData.crust}
+              ingredientsUsed={ingredientsUsed}
+            />
+          </div>
+          <Link to='/thankyou'><button className='btn btn-primary'>Order</button></Link>
         </div>
-        <Link to='/thankyou'><button>Order</button></Link>
+
       </div>
     );
   }

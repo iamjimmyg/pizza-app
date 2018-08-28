@@ -5,8 +5,6 @@ export default function(state = {
   }
 }, action) {
   if(action.type === 'UPDATE_CRUST'){
-    //const stateCopy = Object.assign({}, state, )
-    //console.log(action.payload)
     return Object.assign({}, state, {
       dummyData: {
         crust: action.payload,
@@ -15,7 +13,6 @@ export default function(state = {
 
   }
   if(action.type === 'UPDATE_INGREDIENTS'){
-    //console.log(action.payload)
     return Object.assign({}, state, {
       dummyData: {
         ingredients: action.payload[0],

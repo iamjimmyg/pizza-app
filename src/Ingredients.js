@@ -62,7 +62,6 @@ class Ingredients extends Component {
       </div>
     })
 
-    //let total = 2
     let ingredientsUsed = []
     for(var k in this.state){
       let obj={}
@@ -70,26 +69,27 @@ class Ingredients extends Component {
       obj.picked = this.state[k]
       ingredientsUsed.push(obj)
     }
-    console.log(ingredientsUsed)
-
-
 
     return (
       <div id='ingredients' className='container'>
+        <div className='content'>
+          <h1>Ingredients</h1>
 
-        <h1>Ingredients</h1>
 
-        <div className='row'>
-          {ingredients}
+          <div className='row'>
+            <div className='col-6'>
+              {ingredients}
+            </div>
+            <div className='col-6 float-left'>
+
+              <Table
+                crust={this.props.demoData.crust}
+                ingredientsUsed={ingredientsUsed}
+              />
+            </div>
+          </div>
+          <Link to='/review'><button className='btn btn-primary' onClick={()=>this.props.updateIngredients(this.state, this.props.demoData.crust)}>Next</button></Link>
         </div>
-
-        <Table
-          crust={this.props.demoData.crust}
-          ingredientsUsed={ingredientsUsed}
-          //total={total}
-        />
-
-        <Link to='/review'><button onClick={()=>this.props.updateIngredients(this.state, this.props.demoData.crust)}>Next</button></Link>
       </div>
     );
   }

@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 
 class Table extends Component {
-
-
   render() {
     var total = 2
     let ingredientsTable = this.props.ingredientsUsed.map((item,i) => {
@@ -13,12 +11,10 @@ class Table extends Component {
             <td>$0.50</td>
         </tr>
       }
-
-
     })
     return (
-      <div className='row' id='table'>
-        <div className='col'>
+      <div className='' id='table'>
+        <div className=''>
           <div className='table table-hover'>
             <table>
               <thead className='thead-inverse'>
