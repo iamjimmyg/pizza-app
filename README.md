@@ -2,7 +2,7 @@
 -npm install
 -npm run start
 
-or visit 
+or visit jimmy-pizza-app.surge.sh
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
