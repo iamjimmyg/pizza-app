@@ -7,7 +7,7 @@ class ThankYou extends Component {
     return (
       <div>
         ThankYou
-        <Link to='/'><button>Next</button></Link>
+        <Link to='/'><button>Place Another Order</button></Link>
       </div>
     );
   }
